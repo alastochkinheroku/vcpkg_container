@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
     wget \
 	bison \
+	python3 \
     --fix-missing \
     && rm -rf /var/lib/apt/lists/*
 	
