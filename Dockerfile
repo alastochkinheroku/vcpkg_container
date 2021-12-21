@@ -20,6 +20,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN cd \tmp \
     && git clone https://github.com/Microsoft/vcpkg \ 
     && cd vcpkg \
+	&& git checkout fefb2c12b66680c6a9b58822624ec60e95abc642 \
     && ./bootstrap-vcpkg.sh 
 
 COPY .vcpkg_deps.txt /tmp/vcpkg/
