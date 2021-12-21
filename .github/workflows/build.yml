@@ -4,7 +4,11 @@ on:
   push:
     branches: [ master ]
 
-steps:
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
       -
         name: Checkout 
         uses: actions/checkout@v2
