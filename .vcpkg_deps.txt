@@ -1,0 +1,14 @@
+boost-core
+boost-filesystem
+boost-system
+boost-regex
+boost-date-time
+boost-log
+boost-property-tree
+boost-program-options
+boost-test
+opencv
+Tesseract
+flatbuffers
+paho-mqttpp3
+cpp-base64
