@@ -1,3 +1,9 @@
+name: CI to Docker Hub 
+
+on:
+  push:
+    branches: [ master ]
+
 steps:
       -
         name: Checkout 
@@ -18,4 +24,4 @@ steps:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/vcpkg:latest
