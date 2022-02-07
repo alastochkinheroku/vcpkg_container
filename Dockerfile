@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     --fix-missing \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install robotframework Pillow
+RUN pip3 install robotframework Pillow
 RUN cd \tmp \
     && git clone https://github.com/Microsoft/vcpkg \ 
     && cd vcpkg \
