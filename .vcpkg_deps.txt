@@ -8,6 +8,7 @@ boost-property-tree
 boost-program-options
 boost-test
 boost-lockfree
+boost-json
 opencv
 Tesseract
 flatbuffers
