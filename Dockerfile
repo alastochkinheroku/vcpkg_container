@@ -6,17 +6,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     ca-certificates \
     curl \
-	pkg-config \
+    pkg-config \
     git \
     tar \
-	zip \
+    zip \
     unzip \
     wget \
-	bison \
-	python3 \
+    bison \
+    python3 \
+    python3-pip \
     --fix-missing \
     && rm -rf /var/lib/apt/lists/*
-	
+
+RUN pip install robotframework
 RUN cd \tmp \
     && git clone https://github.com/Microsoft/vcpkg \ 
     && cd vcpkg \
