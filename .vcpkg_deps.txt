@@ -13,3 +13,5 @@ Tesseract
 flatbuffers
 paho-mqttpp3
 cpp-base64
+curl
+grpc
