@@ -14,6 +14,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
     wget \
     bison \
+    autoconf \
+    libtool \
     libreadline-gplv2-dev\
     libncursesw5-dev \
     libssl-dev \
