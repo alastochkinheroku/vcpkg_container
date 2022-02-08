@@ -33,6 +33,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libbz2-dev \
     libffi-dev \
     zlib1g-dev \
+    libglfw3 \
+    libgles2-mesa-dev \
     --fix-missing \
     && rm -rf /var/lib/apt/lists/*
 
@@ -54,5 +56,7 @@ RUN cd \tmp \
 #old not work with debian: && git checkout fefb2c12b66680c6a9b58822624ec60e95abc642 \
 
 COPY .vcpkg_deps.txt /tmp/vcpkg/
-RUN /tmp/vcpkg/vcpkg install fribidi[core] && /tmp/vcpkg/vcpkg install "@/tmp/vcpkg/.vcpkg_deps.txt" \
+RUN /tmp/vcpkg/vcpkg install fribidi[core] \
+    /tmp/vcpkg/vcpkg install libepoxy[core] \
+    && /tmp/vcpkg/vcpkg install "@/tmp/vcpkg/.vcpkg_deps.txt" \
     && /tmp/vcpkg/vcpkg integrate install
