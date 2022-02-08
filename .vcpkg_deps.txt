@@ -1,3 +1,4 @@
+fribidi[core]
 boost-core
 boost-filesystem
 boost-system
