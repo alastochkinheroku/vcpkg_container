@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM debian:stretch
 
 LABEL description="Build base container for VTT"
 
