@@ -9,7 +9,7 @@ boost-program-options
 boost-test
 boost-lockfree
 boost-json
-opencv
+opencv4[core,dnn,jpeg,png,quirc,tiff,webp]
 Tesseract
 flatbuffers
 paho-mqttpp3
