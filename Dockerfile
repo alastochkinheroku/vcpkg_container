@@ -13,12 +13,28 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
     wget \
     bison \
-    python3 \
-    python3-pip \
+    libreadline-gplv2-dev\
+    libncursesw5-dev \
+    libssl-dev \
+    libsqlite3-dev \
+    tk-dev \
+    libgdbm-dev \
+    libc6-dev \
+    libbz2-dev \
+    libffi-dev \
+    zlib1g-dev \
     --fix-missing \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install robotframework Pillow
+#
+RUN cd \tmp \
+    && wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz \
+    && tar xzf Python-3.9.4.tgz \
+    && cd Python-3.9.4 \
+    && ./configure --enable-optimizations \
+    && make install \
+    && update-alternatives --install /usr/bin/python3 python3 /usr/local/bin/python3 9
+#RUN pip3 install robotframework Pillow
 RUN cd \tmp \
     && git clone https://github.com/Microsoft/vcpkg \ 
     && cd vcpkg \
