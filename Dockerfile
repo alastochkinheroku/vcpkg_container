@@ -15,6 +15,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     bison \
     autoconf \
+    automake \
+    autotools-dev \
+    file \
+    libltdl-dev \
+    libltdl7 \
+    libmagic-mgc \
+    libmagic1 \
     libtool \
     libreadline-gplv2-dev\
     libncursesw5-dev \
