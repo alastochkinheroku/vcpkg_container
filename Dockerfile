@@ -22,8 +22,9 @@ RUN pip3 install robotframework Pillow
 RUN cd \tmp \
     && git clone https://github.com/Microsoft/vcpkg \ 
     && cd vcpkg \
-	&& git checkout fefb2c12b66680c6a9b58822624ec60e95abc642 \
     && ./bootstrap-vcpkg.sh 
+    
+#not work with debian && git checkout fefb2c12b66680c6a9b58822624ec60e95abc642 \
 
 COPY .vcpkg_deps.txt /tmp/vcpkg/
 RUN /tmp/vcpkg/vcpkg install "@/tmp/vcpkg/.vcpkg_deps.txt" \
