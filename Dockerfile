@@ -35,6 +35,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     zlib1g-dev \
     libglfw3 \
     x11-xserver-utils \
+    libx11-dev \
+    libmesa-dev \
+    libxext-dev \
     libxrandr-dev \
     libxi-dev \
     libxcursor-dev \
