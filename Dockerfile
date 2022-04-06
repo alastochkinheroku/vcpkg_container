@@ -34,6 +34,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libffi-dev \
     zlib1g-dev \
     libglfw3 \
+    x11-xserver-utils \
+    libxrandr-dev \
+    libxi-dev \
+    libxcursor-dev \
+    libxinerama-dev \
     libgles2-mesa-dev \
     --fix-missing \
     && rm -rf /var/lib/apt/lists/*
@@ -60,3 +65,5 @@ RUN /tmp/vcpkg/vcpkg install fribidi[core] \
     && /tmp/vcpkg/vcpkg install libepoxy[core] \
     && /tmp/vcpkg/vcpkg install "@/tmp/vcpkg/.vcpkg_deps.txt" \
     && /tmp/vcpkg/vcpkg integrate install
+    && rm -rf /tmp/vcpkg/downloads
+    && rm -rf /tmp/vcpkg/buildtrees
