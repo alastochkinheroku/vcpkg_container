@@ -36,7 +36,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libglfw3 \
     x11-xserver-utils \
     libx11-dev \
-    libmesa-dev \
+    libgl1-mesa-dev \
     libxext-dev \
     libxrandr-dev \
     libxi-dev \
