@@ -43,6 +43,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libxcursor-dev \
     libxinerama-dev \
     libgles2-mesa-dev \
+    mesa-utils \
+    libgl1-mesa-dev \
+    libglu1-mesa-dev \
+    libxxf86vm-dev \
+    glew-utils \
     --fix-missing \
     && rm -rf /var/lib/apt/lists/*
 
