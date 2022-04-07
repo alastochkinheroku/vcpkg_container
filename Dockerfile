@@ -87,6 +87,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     yasm \
     zip \
     zlib1g-dev \
+    libxrender-dev \
+    libxcb-util0-dev \
+    libkrb5-dev \
+    libxcb-res0-dev \
+    libwayland-dev \
+    libxdamage-dev \
     --fix-missing \
     && rm -rf /var/lib/apt/lists/*
 
