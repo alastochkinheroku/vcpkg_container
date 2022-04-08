@@ -17,4 +17,3 @@ paho-mqttpp3
 cpp-base64
 curl
 grpc
-qt5[core,imageformats]
