@@ -118,3 +118,7 @@ RUN /tmp/vcpkg/vcpkg install "@/tmp/vcpkg/.vcpkg_deps.txt" \
     && /tmp/vcpkg/vcpkg integrate install \
     && rm -rf /tmp/vcpkg/downloads \
     && rm -rf /tmp/vcpkg/buildtrees
+RUN /tmp/vcpkg/vcpkg install qt5[core,imageformats] 
+    && /tmp/vcpkg/vcpkg integrate install \
+    && rm -rf /tmp/vcpkg/downloads \
+    && rm -rf /tmp/vcpkg/buildtrees
