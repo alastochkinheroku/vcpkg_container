@@ -5,6 +5,7 @@ LABEL description="Build base container for VTT"
 RUN apt-get update && apt-get install -y --no-install-recommends \
     qt5-default \
     qtbase5-dev \
+    fuse \
     at \
     autoconf \
     autoconf-archive \
