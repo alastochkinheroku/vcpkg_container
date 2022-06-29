@@ -10,7 +10,7 @@ boost-test
 boost-lockfree
 boost-json
 boost-dll
-opencv4[core,dnn,jpeg,png,quirc,tiff,webp,gtk]
+opencv4[core,dnn,jpeg,png,quirc,tiff,nonfree,gtk,contrib]
 Tesseract
 flatbuffers
 paho-mqttpp3
